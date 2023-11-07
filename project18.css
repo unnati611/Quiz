@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(53, 91, 165);
+    color: rgb(243, 243, 248);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+}
+
+ul {
+
+    list-style-type: lower-alpha
+}
+
+.btn {
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 25px;
+}

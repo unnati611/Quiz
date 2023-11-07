@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project18.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Quick Quiz Of Javascript</h2>
+      <ol>
+        <li>
+          <p >What will be the output of the following code snippet?</p>
+          <p>var a = Math.max(); var b = Math.min(); print(a); print(b);</p>
+
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question1" value="A" /><span
+                  >-Infinity Infinity</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question1" value="b" /><span
+                  >Infinity -Infinity</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question1" value="c" /><span
+                  >Infinity Infinity</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question1" value="d" /><span
+                  >-Infinity -Infinity</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans1(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans1"></div>
+        </li>
+        <li>
+          <p>What does the Javascript “debugger” statement do?</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question2" value="A" /><span
+                  >It will debug all the errors in the program at ru time</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question2" value="b" /><span></span>
+                  It act as a breakpoint in a program</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question2" value="c" /><span
+                  >It will debug error in the current statment if any.
+                </span></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question2" value="d" /><span
+                  >All of above</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans2(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans2"></div>
+        </li>
+        <li>
+          <p>When an operator’s value is NULL, the typeof returned by the unary operator is:</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question3" value="A" /><span
+                  >Boolean </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question3" value="b" /><span
+                  > Undefined</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question3" value="c" /><span
+                  >Object </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question3" value="d" /><span
+                  >Integer</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans3(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans3"></div>
+        </li>
+        <li>
+          <p>What will be the output of the following code snippet?</p>
+          <p class="box">function solve(arr, rotations){
+ if(rotations == 0) return arr;
+ for(let i = 0; i &lE; rotations; i++){
+   let element = arr.pop();
+   arr.unshift(element);
+ }
+ return arr;
+}
+// solve([44, 1, 22, 111], 5);</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question4" value="A" /><span
+                  >[111,44,1,22] </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question4" value="b" /><span
+                  > [44,1,22,111]</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question4" value="c" /><span
+                  > [111,44,22,1]</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question4" value="d" /><span
+                  >[1,22,111,44]</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans4(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans4"></div>
+        </li>
+        <li>
+          <p>What will be the output of the following code snippet?</p>
+          <p>(function(){
+ setTimeout(()=> console.log(1),2000);
+ console.log(2);
+ setTimeout(()=> console.log(3),0);
+ console.log(4);
+})();</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question5" value="A" /><span
+                  >1 &nbsp; 2&nbsp; 3&nbsp; 4 </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question5" value="b" /><span
+                  >  2 &nbsp; 3&nbsp; 4&nbsp; 1</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question5" value="c" /><span
+                  > 2 &nbsp; 4&nbsp; 3&nbsp; 1 </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question5" value="d" /><span
+                  > 4 &nbsp; 3&nbsp; 2&nbsp; 1 </span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans5(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans5"></div>
+        </li>
+        <li>
+          <p>What is the use of the &le;noscript &ge; tag in Javascript?</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question6" value="A" /><span
+                  >The contents are displayed by non-js-based browsers.</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question6" value="b" /><span
+                  > Clear all the cookies and cache</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question6" value="c" /><span
+                  > Both A and B</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question6" value="d" /><span
+                  >None of the above</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans6(this)" >Check Answer</button>
+          <br>
+          <div class="ans" id="ans6"></div>
+        </li>
+        <li>
+          <p> What will be the output of the following code snippet?</p>
+          <p> &le;script type="text/javascript" language="javascript">
+ 
+var x=12;
+var y=8;
+var res=eval("x+y");
+document.write(res);
+ 
+&le;/script &ge;</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question7" value="A" /><span
+                  >20</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question7" value="b" /><span
+                  >x+y</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question7" value="c" /><span
+                  > 128</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question7" value="d" /><span
+                  >None of above</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans7(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans7"></div>
+        </li>
+        <li>
+          <p>Upon encountering empty statements, what does the Javascript Interpreter do?</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question8" value="A" /><span
+                  >Throws an error</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question8" value="b" /><span
+                  >Ignores the statements</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question8" value="c" /><span
+                  > Gives a warning</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question8" value="d" /><span
+                  >None of above</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans8(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans8"></div>
+        </li>
+        <li>
+          <p>What will be the output of the following code snippet?</p>
+          <p>var a = 1;  
+var b = 0;  
+while (a &le= 3)  
+{  
+   a++;  
+   b += a * 2;  
+   print(b);
+}</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question9" value="A" /><span
+                  >4   10   18 </span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question9" value="b" /><span
+                  >1   2   3</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question9" value="c" /><span
+                  > 1   4   7</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question9" value="d" /><span
+                  >None of above</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans9(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans9"></div>
+        </li>
+        <li>
+          <p>What will be the output for the following code snippet?</p>
+          <p> &le;p id="example">&le;/p>  
+&le;script>  
+function Func()  
+{  
+document.getElementById("example").innerHTML=Math.sqrt(81);  
+}  
+&le;/script>
+
+
+
+
+</p>
+          <ul class="choices">
+            <li>
+              <label
+                ><input type="radio" name="question10" value="A" /><span
+                  >9</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question10" value="b" /><span
+                  > 81</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question10" value="c" /><span
+                  > Error</span
+                ></label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="question10" value="d" /><span
+                  >0</span
+                ></label
+              >
+            </li>
+          </ul>
+          <br>
+          <button class="ans" onclick="checkans10(this)">Check Answer</button>
+          <br>
+          <div class="ans" id="ans10"></div>
+        </li>
+      </ol>
+      <button class="btn" onclick="submit()">Submit</button>
+      <h3 id="score"></h3>
+    </div>
+    <script src="project18.js"></script>
+  </body>
+</html>
